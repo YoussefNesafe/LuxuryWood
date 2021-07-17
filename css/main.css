@@ -53,11 +53,16 @@ header nav .navbar-brand {
 
 nav ul li {
   transition: 0.3s;
+  border-radius: 10px;
 }
 nav ul li:hover,
 nav ul li.active {
   color: #fff;
   text-shadow: 0px 0px 4px #fff;
+}
+nav ul li.active {
+  border: 1px solid #f5f5f5;
+  box-shadow: 1px 1px 10px #f5f5f5;
 }
 .bg-story {
   background-image: url(/images/bg.jpg);
