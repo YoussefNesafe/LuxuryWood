@@ -1,0 +1,133 @@
+:root {
+  --gold-color: #c28b1f;
+  --black-color: #282828;
+}
+
+/* Start To Top Button  */
+#toTopButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #111;
+  z-index: 1000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  font-weight: 400;
+}
+#toTopButton:hover {
+  background: #000;
+  font-weight: 400;
+}
+
+/*Start The Main Style*/
+
+header {
+  height: 100vh;
+  background: url(/images/test2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+header nav {
+  z-index: 100;
+  min-height: 70px;
+  transition: 0.5s;
+}
+header nav .navbar-brand {
+  border-bottom: 2px solid #fff;
+}
+
+nav ul li {
+  transition: 0.3s;
+}
+nav ul li:hover,
+nav ul li.active {
+  color: #fff;
+  text-shadow: 0px 0px 4px #fff;
+}
+.bg-story {
+  background-image: url(/images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.bg-story .our-story {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.6) 30%,
+    rgba(255, 255, 255, 0.2)
+  );
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bg-img-concept,
+.bg-img-perf {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.bg-img-concept {
+  background-image: url(/images/bg.jpg);
+}
+.bg-img-perf {
+  background-image: url(/images/bg2.jpg);
+}
+.perf::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  background: #888;
+  bottom: 0;
+  left: -100px;
+}
+.work-title::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: #999;
+  position: absolute;
+  right: -100%;
+  bottom: 10px;
+}
+.our-work .content-title h4 a:hover {
+  transition: 0.4s;
+  color: #000;
+  text-decoration: none;
+}
+.load-work a {
+  color: #777;
+  border-bottom: 2px solid #999;
+}
+.load-work a:hover {
+  text-decoration: none;
+}
+.legacy {
+  background-image: url(/images/hero_1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
