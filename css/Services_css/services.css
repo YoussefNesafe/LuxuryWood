@@ -1,0 +1,30 @@
+header .text-center h1.h1 {
+  font-size: 6em;
+}
+
+@media (max-width: 850px) {
+  header .text-center h1.h1 {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 660px) {
+  header .text-center h1.h1 {
+    font-size: 3em;
+  }
+  header .text-center h5.h5 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  header .text-center h1.h1 {
+    font-size: 2em;
+  }
+  header .text-center h5.h5 {
+    font-size: 1em;
+  }
+}
+
+/*End Header*/
+/*# sourceMappingURL=services.css.map */

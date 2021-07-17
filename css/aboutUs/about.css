@@ -29,10 +29,10 @@ header .text-center h1.h1 {
 /*End Header*/
 .img-shadow {
   display: block;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   background-image: url(/images/img_1.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -64,7 +64,7 @@ header .text-center h1.h1 {
 }
 
 .servicies .service-1 h2.h2:after {
-  content: "Interior Design";
+  content: "Fire rated doors ";
 }
 
 .servicies .service-2 h2.h2:after {
@@ -80,11 +80,11 @@ header .text-center h1.h1 {
 }
 
 .servicies .service-5 h2.h2:after {
-  content: "Bedroom";
+  content: "interior Design";
 }
 
 .servicies .service-6 h2.h2:after {
-  content: "Bedroom";
+  content: "Office";
 }
 
 @media (max-width: 1200px) {
