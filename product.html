@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
 
-    <link rel="stylesheet" href="./css/Services_css/services.css">
-
     <!--Assest-->
     <link rel="stylesheet" href="./css/colcade.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -57,11 +55,11 @@
                             <a class="nav-link active" href="/about-us.html">About Us</a>
                         </li>
                         <li
-                            class="nav-item pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0  text-center my-md-1 my-sm-1 active">
-                            <a class="nav-link active" href="">Services</a>
+                            class="nav-item pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0  text-center my-md-1 my-sm-1">
+                            <a class="nav-link active" href="/services.html">Services</a>
                         </li>
                         <li
-                            class="nav-item pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0  text-center my-md-1 my-sm-1">
+                            class="nav-item pr-lg-3 pr-md-2 pr-sm-0 pl-lg-3 pl-md-2 pl-sm-0  text-center my-md-1 my-sm-1 active">
                             <a class="nav-link active" href="product.html">Product</a>
                         </li>
                     </ul>
@@ -70,84 +68,20 @@
             </div>
         </nav>
         <div class="center text-center">
-            <h1 class="h1" data-aos="fade-down">
-                <img src="./images/icons/service-1-icon-1.png" alt="" class="img-fluid">
-            </h1>
-            <h1 class="h1 text-white" data-aos="fade-down">
-                Services
-            </h1>
+
+            <img src="./images/light-logo.png" class="img-fluid logo-img" alt="" data-aos="fade-down">
+
+            <h3 class="h5 text-white mt-0 pt-0">
+                Experience , Efficiency and accuracy in Performance
+            </h3>
         </div>
     </header>
     <!-- END header -->
-
-    <!-- Start Services -->
-
-    <div class="services-section overflow-hidden">
-        <div class="services-section-1 row">
-            <div class="col-lg-8 col-md-6 col-sm-12 bg-img">
-
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12  bg-black d-flex align-items-center p-4" data-aos="fade-left">
-                <div>
-                    <h1 class="h1">
-                        <img src="/images/icons/service-1-icon-1.png" alt="" class="img-fluid">
-                    </h1>
-                    <h1 class="h1 text-white">Machine</h1>
-                    <p class="lead text-grey">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quod repudiandae reiciendis
-                        nesciunt hic. Eveniet enim perferendis nihil mollitia deserunt, at placeat, praesentium eaque
-                        cupiditate, quae amet numquam vel reprehenderit.
-                    </p>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="services-section-2 row">
-            <div class="col-lg-4 col-md-6 col-sm-12 bg-light d-flex align-items-center p-4" data-aos="fade-right">
-                <div>
-                    <h1 class="h1">
-                        <img src="/images/icons/icon-2-1.png" alt="" class="img-fluid">
-                    </h1>
-                    <h1 class="h1">Design</h1>
-                    <p class="lead text-grey">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quod repudiandae reiciendis
-                        nesciunt hic. Eveniet enim perferendis nihil mollitia deserunt, at placeat, praesentium eaque
-                        cupiditate, quae amet numquam vel reprehenderit.
-                    </p>
-
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-6 col-sm-12 bg-img"></div>
-        </div>
-
-        <div class="services-section-3 row">
-            <div class="col-lg-8 col-md-6 col-sm-12 bg-img"></div>
-            <div class="col-lg-4 col-md-6 col-sm-12  bg-black d-flex align-items-center p-4" data-aos="fade-left">
-                <div>
-                    <h1 class="h1">
-                        <img src="/images/icons/service-1-icon-1.png" alt="" class="img-fluid">
-                    </h1>
-                    <h1 class="h1 text-white">Product</h1>
-                    <p class="lead text-grey">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quod repudiandae reiciendis
-                        nesciunt hic. Eveniet enim perferendis nihil mollitia deserunt, at placeat, praesentium eaque
-                        cupiditate, quae amet numquam vel reprehenderit.
-                    </p>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- End Services -->
-
     <!-- Satrt Footer -->
 
     <footer class="footer bg-black pt-5 overflow-hidden">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-down">
                 <div class="col-lg-6 col-md-6 col-sm-10 mx-sm-auto">
                     <img src="./images/light-logo.png" alt="" class="img-fluid">
                 </div>
@@ -186,6 +120,27 @@
 
     <!-- Back To Top Button  -->
     <script src="./js/backToTopBtn.js"></script>
+
+    <!--Script for Counter section-->
+    <script>
+        $(document).ready(function () {
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1000
+            })
+        })
+    </script>
+
+    <!-- Masonry File -->
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <script>
+        // element as first argument
+        var grid = document.querySelector('.work-gallery .grid');
+        var colc = new Colcade(grid, {
+            columns: '.grid-col',
+            items: '.grid-item'
+        });
+    </script>
 
     <!--Script AOS animation-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
