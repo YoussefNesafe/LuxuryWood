@@ -26,8 +26,8 @@ header .text-center h1.h1 {
 .office .line:hover:before,
 .door .line:hover:before,
 .others .line:hover:before {
-  -webkit-animation: lump 1.4s infinite ease-in-out;
-          animation: lump 1.4s infinite ease-in-out;
+  -webkit-animation: lump 2.4s 1 ease-in-out;
+          animation: lump 2.4s 1 ease-in-out;
 }
 
 .bedroom img,
