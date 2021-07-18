@@ -130,9 +130,33 @@ nav ul li.active {
   text-decoration: none;
 }
 .legacy {
-  background-image: url(/images/hero_1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 100vh;
+  background-image: url(/images/bg.jpg);
+  margin-right: 13%;
+  background-position: center;
+  background-size: cover;
+}
+.legacy .legacy-content {
+  min-height: 90vh;
+  top: 100px;
+  left: 100px;
+  z-index: 4;
+}
+.bedroom h1.h1 {
+  position: relative;
+}
+.bedroom h1.h1::before,
+.bedroom h1.h1::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #222;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bedroom h1.h1::after {
+  right: 0;
 }
