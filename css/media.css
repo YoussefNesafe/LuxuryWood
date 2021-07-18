@@ -1,4 +1,7 @@
 @media (max-width: 767px) {
+  .navbar {
+    background: #000 !important;
+  }
   span.lines {
     display: none;
   }

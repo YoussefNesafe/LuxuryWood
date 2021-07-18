@@ -42,12 +42,12 @@ header {
   background-repeat: no-repeat;
   position: relative;
 }
-header nav {
+nav {
   z-index: 100;
   min-height: 70px;
   transition: 0.5s;
 }
-header nav .navbar-brand {
+nav .navbar-brand {
   border-bottom: 2px solid #fff;
 }
 
