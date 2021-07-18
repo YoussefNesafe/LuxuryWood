@@ -2,7 +2,9 @@
   --gold-color: #c28b1f;
   --black-color: #282828;
 }
-
+.bg-brown {
+  background-color: rgb(209, 102, 41);
+}
 /* Start To Top Button  */
 #toTopButton {
   position: fixed;
@@ -159,4 +161,9 @@ nav ul li.active {
 
 .bedroom h1.h1::after {
   right: 0;
+}
+.contact i:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  color: #000;
 }
