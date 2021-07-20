@@ -54,6 +54,13 @@ header {
   left: -50px;
   bottom: -50px;
 }
+
+.about-story,
+.vision {
+  .img-shadow {
+    left: 50px;
+  }
+}
 /*Start Services */
 .servicies {
   .service {

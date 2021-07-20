@@ -42,6 +42,11 @@ header .text-center h1.h1 {
   bottom: -50px;
 }
 
+.about-story .img-shadow,
+.vision .img-shadow {
+  left: 50px;
+}
+
 /*Start Services */
 .servicies .service h2 {
   position: relative;
